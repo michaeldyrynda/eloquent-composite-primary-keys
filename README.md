@@ -3,15 +3,12 @@ A single trait to implement in your Eloquent models to support composite primary
 
 This package is largely inspired by [suggested code on Stack Exchange](https://stackoverflow.com/a/36995763/526501) and has also been released in a package with more than this functionality. I needed a separate package for just this purpose.
 
-## IMPORTANT: This is now read-only
-I have decided to make this project read-only and not further work on this. There are a bunch of performance related downsides when doing this in Laravel, which make it no longer fun and rewarding for me to work on.
-
-In case you still want to use this functionality in Laravel, you can have a look at the [LaravelTreats package](https://github.com/mopo922/LaravelTreats/tree/master/src/Model#laraveltreatsmodeltraitshascompositprimarykey) which contains similar functionality.
+This package has been forked from [Coen Jacobs](https://github.com/coenjacobs/eloquent-composite-primary-keys) as we have a need for it moving forward (Laravel 6.0+), but they've archived the project.
 
 ## Install
 Install this package through Composer:
 ```
-composer require coenjacobs/eloquent-composite-primary-keys
+composer require dyrynda/eloquent-composite-primary-keys
 ```
 
 Make sure you have a database schema that supports composite primary keys, for example via a migration:
@@ -29,7 +26,7 @@ Use the trait on the Eloquent model you wish to have composite primary keys on:
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use CoenJacobs\EloquentCompositePrimaryKeys\HasCompositePrimaryKey;
+use Dyrynda\EloquentCompositePrimaryKeys\HasCompositePrimaryKey;
 
 class Product extends Model
 {

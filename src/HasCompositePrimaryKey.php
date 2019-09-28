@@ -1,6 +1,6 @@
 <?php
 
-namespace CoenJacobs\EloquentCompositePrimaryKeys;
+namespace Dyrynda\EloquentCompositePrimaryKeys;
 
 use Exception;
 use Illuminate\Database\Eloquent\Builder;

@@ -1,5 +1,5 @@
 {
-    "name": "coenjacobs/eloquent-composite-primary-keys",
+    "name": "dyrynda/eloquent-composite-primary-keys",
     "description": "Offers composite primary keys on Eloquent models",
     "type": "library",
     "license": "MIT",
@@ -7,6 +7,10 @@
         {
             "name": "Coen Jacobs",
             "email": "coenjacobs@gmail.com"
+        },
+        {
+            "name": "Michael Dyrynda",
+            "email": "michael@dyrynda.com.au"
         }
     ],
     "minimum-stability": "dev",
@@ -16,7 +20,7 @@
     },
     "autoload": {
         "psr-4": {
-            "CoenJacobs\\EloquentCompositePrimaryKeys\\": "src/"
+            "Dyrynda\\EloquentCompositePrimaryKeys\\": "src/"
         }
     }
 }
